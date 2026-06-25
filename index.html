@@ -1,12 +1,25 @@
 <html>
+
+	<head>
+
+		<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		
+	</head>
 <style>
+	:root{
+		--primary: #fcfcfc;
+		--accent: #bf000a;
+		--background: #0c0c0c;
+	}
   body{
-    background-color: #0c0c0c;
-    color: #ffffff;
+    background-color: var(--background);
+    color: var(--primary);
   }
 
   h1, h2, h3, h4, h5, h6, p, a{
-    color: #ffffff;
+    color: var(--primary);
     font-family: Helvetica, sans-serif;
   }
 
@@ -31,7 +44,7 @@
 	}
 
 	.header-container{
-    	background-color: #bf000a;
+    	background-color: var(--accent);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -46,20 +59,20 @@
 	}
 
 	button{
-		background-color: #bf000a;
+		background-color: var(--accent);
 		text-align: center;
 		font-weight: 800;
 		border-style: block;
-		border-color: #ffffff;
-		border-radius: 100%;
+		border-color: var(--primary);
+		border-radius: 30px;
 		transition: opacity 0.3s;
-		color: #ffffff;
+		color: var(--primary);
 	}
 
 	button:hover{
-		background-color: #0c0c0c;
-		border-color: #bf000a;
-		color: #bf000a;
+		background-color: var(--primary);
+		border-color: var(--accent);
+		color: var(--accent);
 		transition: opacity 0.3s;
 </style>
 
