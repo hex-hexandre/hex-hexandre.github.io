@@ -66,18 +66,20 @@
 		background-color: var(--accent);
 		text-align: center;
 		font-weight: 800;
-		border-style: block;
-		border-color: var(--primary);
+		border-style: solid;
+		border-width: 1pt;
+		border-color: var(--background);
 		border-radius: 30px;
-		transition: opacity 0.3s;
+		transition: background-color, border-color, color 0.3s;
 		color: var(--primary);
+		min-height: 3em;
+		padding: 10px 20px;
 	}
 
 	button:hover{
-		background-color: var(--primary);
+		background-color: var(--background);
 		border-color: var(--accent);
 		color: var(--accent);
-		transition: opacity 0.3s;
 	}
 </style>
 
@@ -93,7 +95,7 @@
 		  <br>
 		  <h3>About me</h3>
 		  <p>I am an artist, a Google-certified project manager, a marketing manager with a Master in Growth Marketing, a Bachelor's Degree student in Business Administration, a startup competitions judge and mentor, a painter, a beginner LoRA trainer for AI, a business consultant, a developer and web designer, a graphic designer, a musician and composer, a tech enthusiast and much more. <br><br> Don't believe me?</p>
-		  <button href="https://www.tiktok.com/@hexandre">Visit my tiktok</button>
+		  <a href="https://www.tiktok.com/@hexandre"><button>Visit my TikTok</button></a>
 	  </div>
   </body>
 </html>
